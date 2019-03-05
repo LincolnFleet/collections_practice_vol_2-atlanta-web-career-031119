@@ -53,7 +53,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  count_hash=Array.new
+  count_hash=Hash.new
   array.uniq.collect {|item| count_hash[:count array.count(item).to_s]=item}
   return count_hash
 end
