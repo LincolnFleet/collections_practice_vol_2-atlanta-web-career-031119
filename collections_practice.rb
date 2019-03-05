@@ -1,17 +1,9 @@
 # your code goes here
 def begins_with_r(array)
-  i=0
-  while i<array.length
-    if array[i][0] == 'r'
-      i+=1
-    else
-      return false
-    end
-
   if array.length>0
     i=0
     while i<array.length
-      if array[i].first == 'r'
+      if array[i][0] == 'r'
         i+=1
       else
         return false
