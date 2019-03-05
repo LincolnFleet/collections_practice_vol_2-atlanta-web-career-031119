@@ -46,9 +46,9 @@ end
 
 def remove_non_strings(array)
   # array.collect {|item| if item.to_s!=item; array.delete(item) end}
-  array.collect {|item| if item.class!=String; array.delete(item) end}
+  array.collect {|item| if item.class!=String || item.class==Symbol; array.delete(item) end}
   # CHEEEEEAAAATTTTIIINNNNGGGGG
-  array.delete(:hello)
+  #array.delete(:hello)
   return array
 end
 
