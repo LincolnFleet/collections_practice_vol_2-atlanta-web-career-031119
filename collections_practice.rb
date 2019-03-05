@@ -40,7 +40,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  count_hash=Hash.new
-  array.uniq.collect {|item| count_hash[":count #{array.count(item)}"]=item}
-  return count_hash
+  count_array=Array.new
+  array.uniq.collect {|item| count_array<<[{:count=>array.count(item), :name=>item}]}
+  return count_array
 end
