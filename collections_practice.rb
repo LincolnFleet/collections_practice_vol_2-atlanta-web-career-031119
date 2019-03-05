@@ -41,6 +41,6 @@ end
 
 def count_elements(array)
   count_array=Array.new
-  array.uniq.collect {|item| count_array<<[{:count=>array.count(item), :name=>item}]}
+  array.uniq.collect {|item| count_array<<{:count=>array.count(item), :name=>item}}
   return count_array
 end
