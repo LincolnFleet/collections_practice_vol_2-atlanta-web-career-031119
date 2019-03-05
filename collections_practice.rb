@@ -54,6 +54,6 @@ end
 
 def count_elements(array)
   count_hash=Array.new
-  count_hash<<array.uniq.collect {|item| {:count array.count(item),item}}
+  array.uniq.collect {|item| count_hash<<{:count array.count(item).to_s => item}}
   return count_hash
 end
