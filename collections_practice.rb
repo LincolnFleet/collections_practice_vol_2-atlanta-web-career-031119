@@ -13,17 +13,17 @@ end
 
 def contain_a(array)
   i=0
-  a_stuff=[]
+  a_words=[]
   while i<array.length
     word=array[i]
     if word.include?('a')
-      a_stuff<<word
+      a_words<<word
       i+=1
     else
       i+=1
     end
   end
-  return a_stuff
+  return a_words
 end
 
 def first_wa(array)
